@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nineradio.AppTest" time="0.181" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nineradio.ParserTest" time="0.174" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -61,5 +61,17 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="org.nineradio.AppTest" time="0.003"/>
+  <testcase name="symbolThrowsExceptionIfImproperCommandGiven" classname="org.nineradio.ParserTest" time="0.031"/>
+  <testcase name="commandTypeReturnsCComandWhenGivenCompAndJump" classname="org.nineradio.ParserTest" time="0.011"/>
+  <testcase name="symbolReturnsCorrectSymbolForACommand" classname="org.nineradio.ParserTest" time="0.023"/>
+  <testcase name="hasMoreCommandsReturnsTrueWhenMoreCommands" classname="org.nineradio.ParserTest" time="0.008"/>
+  <testcase name="commandTypeReturnsNoCommandWhenGivenWhitespaceAndComments" classname="org.nineradio.ParserTest" time="0.007"/>
+  <testcase name="commandTypeReturnsCCommandWhenGivenDestCompAndJump" classname="org.nineradio.ParserTest" time="0.017"/>
+  <testcase name="hasMoreCommandsReturnsFalseWhenNoMoreCommands" classname="org.nineradio.ParserTest" time="0.009"/>
+  <testcase name="advanceThrowsExceptionWhenNoMoreCommands" classname="org.nineradio.ParserTest" time="0.014"/>
+  <testcase name="commandTypeReturnsCCommandWhenGivenDestAndComp" classname="org.nineradio.ParserTest" time="0.006"/>
+  <testcase name="symbolReturnsCorrectSymbolForLCommand" classname="org.nineradio.ParserTest" time="0.003"/>
+  <testcase name="commandTypeReturnsLCommandWhenGivenLCommand" classname="org.nineradio.ParserTest" time="0.003"/>
+  <testcase name="commandTypeReturnsACommandCorrectlyWhenGivenNumber" classname="org.nineradio.ParserTest" time="0.005"/>
+  <testcase name="commandTypeReturnsACommandCorrectlyWhenGivenSymbol" classname="org.nineradio.ParserTest" time="0.004"/>
 </testsuite>

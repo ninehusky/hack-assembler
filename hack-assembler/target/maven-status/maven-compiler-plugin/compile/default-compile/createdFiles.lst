@@ -1,2 +1,4 @@
+org/nineradio/Parser.class
 org/nineradio/App.class
+org/nineradio/CommandType.class
 org/nineradio/Code.class

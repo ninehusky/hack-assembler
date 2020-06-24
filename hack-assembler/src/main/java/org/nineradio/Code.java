@@ -9,6 +9,7 @@ import java.io.*;
 
 public class Code {
     private static final String SYMBOL_BASE_URL = "-symbols.csv";
+    private Set<String> symbolsWhereAIs1;
     private Map<String, String> destMap;
     private Map<String, String> compMap;
     private Map<String, String> jumpMap;
@@ -17,6 +18,8 @@ public class Code {
      * Constructs a new Code.
      */
     public Code() {
+        symbolsWhereAIs1 = new HashSet<>(Arrays.asList("M", "!M", "-M", "M+1", "M-1", "D+M", "D-M", "M-D", "D&M", "D|M"));
+
         destMap = new HashMap<>();
         compMap = new HashMap<>();
         jumpMap = new HashMap<>();
@@ -40,7 +43,7 @@ public class Code {
      * @return binary equivalent of the mnemonic
      */
     public String comp(String mnemonic) {
-        return getSymbol(mnemonic, "invalid", compMap);
+        return getABit(mnemonic) + getSymbol(mnemonic, "invalid", compMap);
     }
 
     /**
@@ -88,5 +91,9 @@ public class Code {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private String getABit(String mnemonic) {
+        return symbolsWhereAIs1.contains(mnemonic) ? "1" : "0";
     }
 }

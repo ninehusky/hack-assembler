@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nineradio.CodeTest" time="0.019" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nineradio.CodeTest" time="0.049" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire/surefirebooter4711674831862224102.jar /Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire 2020-06-23T14-46-22_810-jvmRun1 surefire10868990021778647811tmp surefire_010840149041668507158tmp"/>
+    <property name="sun.java.command" value="/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire/surefirebooter17685704574245649010.jar /Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire 2020-06-24T15-02-45_938-jvmRun1 surefire12356906595052732355tmp surefire_014397399199026746912tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/test-classes:/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/classes:/Users/versace/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/versace/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire/surefirebooter4711674831862224102.jar"/>
+    <property name="surefire.real.class.path" value="/Users/versace/Desktop/side_projects/nand2tetris/projects/06/hack-assembler/hack-assembler/target/surefire/surefirebooter17685704574245649010.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.5+10"/>
@@ -61,5 +61,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="constructorPasses" classname="org.nineradio.CodeTest" time="0.017"/>
+  <testcase name="destMnemonicsReturnCorrectValues" classname="org.nineradio.CodeTest" time="0.027"/>
+  <testcase name="jumpWorks" classname="org.nineradio.CodeTest" time="0.005"/>
+  <testcase name="constructorPasses" classname="org.nineradio.CodeTest" time="0.013"/>
 </testsuite>

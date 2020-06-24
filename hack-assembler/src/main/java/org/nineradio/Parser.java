@@ -57,6 +57,7 @@ public class Parser {
         } else {
             currCommandType = CommandType.NO_COMMAND;
         }
+        System.out.println("\ncurrent command = " + currCommand);
     }
 
     /**
@@ -101,6 +102,7 @@ public class Parser {
         }
         if (currCommand.contains("=")) {
             // take portion of command to the left of the equals
+            System.out.println("dest = " + currCommand.substring(0, currCommand.indexOf("=")));
             return code.dest(currCommand.substring(0, currCommand.indexOf("=")));
         }
         return code.dest("");
@@ -122,6 +124,7 @@ public class Parser {
         if (compString.contains(";")) {
             compString = compString.substring(0, compString.indexOf(";"));
         }
+        System.out.println("comp = " + compString);
         return code.comp(compString);
     }
 
@@ -135,7 +138,8 @@ public class Parser {
             throw new IllegalStateException("Cannot find dest for non-C command!");
         }
         if (currCommand.contains(";")) {
-            return code.jump(currCommand.substring(0, currCommand.indexOf(";")));
+            System.out.println("jump = " + currCommand.substring(0, currCommand.indexOf(";") + 1));
+            return code.jump(currCommand.substring(currCommand.indexOf(";") + 1));
         }
         return code.jump("");
     }
