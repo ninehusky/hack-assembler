@@ -30,7 +30,8 @@ public class SymbolTable {
         if (contains(symbol)) {
             throw new IllegalArgumentException("Key already exists for " + symbol + "!");
         }
-        table.put(symbol, varAddress++);
+        table.put(symbol, varAddress);
+        varAddress++;
     }
 
     /**
